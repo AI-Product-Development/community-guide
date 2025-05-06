@@ -119,6 +119,31 @@ This single command:
 - **Separate environments:** If you need fundamentally different sets of dependencies (e.g., for different sub-projects), consider using separate Git repositories, each with its own `uv` setup.
 - **Monorepos:** While `uv` works in monorepos, Python's tooling ecosystem generally works best with one primary environment per repository. Avoid overly complex monorepos if possible.
 
+## 🧠 Newbie Tips
+As an example here are some steps that were used to get started on the stockmarket API.
+
+Initialize
+<code>
+PS C:\Users\rsham004\Documents\foundry\new_project> uv init
+Initialized project `new-project`
+</code>
+Create virtual environment folder
+<code>
+PS C:\Users\rsham004\Documents\foundry\new_project> uv venv
+Using CPython 3.13.3 interpreter at: C:\Users\rsham004\AppData\Local\Programs\Python\Python313\python.exe
+Creating virtual environment at: .venv
+Activate with: .venv\Scripts\activate
+</code>
+Activate the virtual environment
+<code>
+PS C:\Users\rsham004\Documents\foundry\new_project> .\.venv\Scripts\activate
+</code>
+Run the program to see if things are set up correctly
+<code>
+(new_project) PS C:\Users\rsham004\Documents\foundry\new_project> python main.py
+Hello from new-project!
+</code>
+
 ## ✅ Summary
 
 Use `uv` if you want:
